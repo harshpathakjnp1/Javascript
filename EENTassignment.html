@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+          border: solid black;
+          border-width: 40px;
+          margin: 0;
+        }
+        .container {
+         
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-around;
+            margin: 0px 150px 0px 150px;
+         
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+           
+            font-family: Arial;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px;
+            justify-content: space-between;
+
+        }
+
+
+        /* Links inside the navbar */
+        .navbar a {
+
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+
+
+
+        .Home {
+            
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-color: whitesmoke;
+        }
+
+        .container-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 2px;
+            justify-content: space-between;
+            background-color: white;
+            border-radius: 10px;
+
+
+        }
+
+        .container-column {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .searchbox {
+
+            display: flex;
+
+            align-items: center;
+
+
+
+
+        }
+
+        .circle {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+
+        }
+
+        .circle1 {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+
+
+        }
+
+        .windowicon {
+
+
+            width: 150px;
+            height: 40px;
+
+            margin-left: 15px;
+            padding: 0;
+
+
+        }
+
+        p {
+            margin-left: 15px;
+        }
+
+        #simple {
+            border-color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="container-row">
+
+                <img class="circle1" src="https://cdn-icons-png.flaticon.com/512/71/71753.png" alt="">
+
+                <img class="windowicon"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTantZHbBrXMLF_JlZFApQR8gfrTq5-GodZXNepYZocyRLAQ2jPQv4UOI1Q66VESM_nNgM&usqp=CAU"
+                    alt="">
+                <a href="#review" style="font-size: 1rem; font-weight: bold;">Reviews </a>
+
+                <select id="simple" name="simple">
+                    <option>News</option>
+                    <option selected>News</option>
+                    <option>News</option>
+                </select>
+                <select id="simple" name="simple">
+                    <option>Random</option>
+                    <option selected>Random</option>
+                    <option>Random</option>
+                </select>
+                <select id="simple" name="simple">
+                    <option>Fashion</option>
+                    <option selected>Fashion</option>
+                    <option>Fashion</option>
+                </select>
+            </div>
+            <div class="container-row">
+                <div class="searchbox"> <img
+                        src="https://webimages.mongodb.com/_com_assets/cms/kq2qmrej7f2j8oxpd-Search.svg?auto=format%252Ccompress"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Home">
+            <div class="container-row" style="background-color: whitesmoke;">
+                <div class="container-row">
+                    <img class="circle"
+                        src="https://cdn.scrambledchefs.com/wp-content/uploads/2020/06/Mexican-Pancakes-Thumbnail.jpg"
+                        alt="" height="20px">
+                        <p>Lorem ipsum dolor s <br> consectetur sahadipiHGsicing <br> elit.</p>
+                    </div>
+                <div class="container-row">
+                    <img class="circle"
+                        src="https://c4.wallpaperflare.com/wallpaper/523/884/958/bugatti-bugatti-divo-black-car-car-wallpaper-preview.jpg"
+                        alt="" height="20px">
+                    <p>Lorem ipsum dolor s <br> consectetur sahadipisHGicing <br> elit.</p>
+                </div>
+                <div class="container-row">
+                    <img class="circle"
+                        src="https://dress-trends.com/wp-content/uploads/2019/03/teenage-girl-outfits-2019-1.jpg" alt=""
+                        height="20px">
+                        <p>Lorem ipsum dolor s <br> consectetur sahadipisicHGing <br> elit.</p>
+                    </div>
+                <div class="container-row">
+                    <img class="circle"
+                        src="https://dress-trends.com/wp-content/uploads/2019/03/teenage-girl-outfits-2019-1.jpg" alt=""
+                        height="20px">
+                        <p>Lorem ipsum dolor s <br> consectetur sahadipisicinHGg <br> elit.</p>
+                    </div>
+            </div>
+            <div class="container-row" style="justify-content:space-between;margin: 20px ; background-color: whitesmoke;">
+                <div class="container-column">
+                    <div class="container-row">
+                        <img style="width:200px ; height: 214px; background-color: whitesmoke; "
+                            src="https://jbt-en-images.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/06122603/Sanjana-Sanghi.jpg"
+                            alt="">
+                    </div>
+                    <div class="container-row">
+                        <img style="width:200px ; height: 214px;  background-color: whitesmoke; "
+                            src="https://dress-trends.com/wp-content/uploads/2019/03/teenage-girl-outfits-2019-1.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="container-column">
+                    <img style="width:480px ; height: 440px;  background-color: whitesmoke; "
+                        src="https://c4.wallpaperflare.com/wallpaper/253/420/915/grass-girl-sleep-spring-wallpaper-preview.jpg"
+                        alt="">
+                </div>
+                <div class="container-column">
+                    <div class="container-row">
+                        <img style="width:200px ; height: 214px;  background-color: whitesmoke;"
+                            src="https://technosports.co.in/wp-content/uploads/2022/01/kate-916x1024.jpg" alt="">
+                    </div>
+                    <div class="container-row">
+                        <img style="width:200px ; height: 214px;  background-color: whitesmoke; "
+                            src="https://jbt-en-images.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/06122603/Sanjana-Sanghi.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

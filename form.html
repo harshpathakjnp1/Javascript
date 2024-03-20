@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Promise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function f1(username, password) {
+
+            var temp = new Promise(function (resolve, reject) {
+                for(i=0;i<username.length;i++)
+                {
+                       var p = username.charCodeAt(i);
+                       if(p<65 || p>122){
+                       reject('Your Promise Rejected');
+                       return 0;
+                       }
+
+                       
+                }
+
+                if (typeof(username)=="string" && password >= 0)
+                    resolve('Your Promise Accepted');
+                else
+                    reject('Your Promise Rejected');
+            })
+          temp
+                .then(function (successMsg) {
+                    console.log(successMsg);
+                }, function (errorMsg) {
+                    //To error handler function is invoked
+                    console.log(errorMsg);
+                })
+        }
+
+    </script>
+</head>
+<body>
+    Output<div id="output"></div><br />
+    <input type="button" value="Username" onclick="f1('harsh',1234)"><br />
+    <input type="button" value="Password" onclick="f1('harsh',123456)"><br />
+</body>
+</html>

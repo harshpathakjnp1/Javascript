@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Images</title>
+    <style>
+        img {
+
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            box-sizing: border-box;
+            border-color: blue;
+            border-width: 1px;
+            border-style: ridge;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <img id="logo0" src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/keycap-digit-zero_30-fe0f-20e3.png"
+        alt="Not loaded">
+    <img id="logo1" src="https://icon-library.com/images/number-1-icon-png/number-1-icon-png-0.jpg" alt="Not loaded">
+    <img id="logo2"
+        src="https://w7.pngwing.com/pngs/171/276/png-transparent-graphy-numerical-digit-number-others-photography-numerical-digit-number.png"
+        alt="Not loaded">
+
+
+    <script>
+        console.log("shubham");
+        document.write("harsh");
+        var total = 3;
+        function slideShow() {
+            var i = 0;
+            var temp = document.getElementById("logo0").src;
+            for (i = 1; i <= total - 1; i++)
+                document.getElementById("logo" + (i - 1)).src = document.getElementById("logo" + (i)).src;
+            document.getElementById("logo" + (total - 1)).src = temp;
+
+        }
+        function slideShow2() {
+            var j = 0;
+            var temp2 = document.getElementById("logo2").src;
+            for (j = total - 1; j >= 1; j--)
+                document.getElementById("logo" + (j)).src = document.getElementById("logo" + (j - 1)).src;
+            document.getElementById("logo0").src = temp2;
+
+        }
+        setInterval(slideShow, 1500);
+
+    </script>
+
+</body>
+
+</html>

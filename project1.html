@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>shubham</title>
+<style>
+</style>
+
+
+<script>
+    var x = 0;
+
+    function fDefine() {
+     x = 0;
+     fShow(x);
+
+    }
+    function fShow(value) {
+
+        document.getElementById("dOutput").innerHTML = value;
+    }
+    function fAdd() {
+        
+        x++;
+        fShow(x);
+
+    }
+    function fSub() {
+        
+        x--;
+        fShow(x);
+
+    }
+</script>
+
+<body>
+    <div id="dOutput"></div>
+    <input type="button" value="deffine" onclick="fDefine() ">
+    <input type="button" value="ADD" onclick="fAdd()">
+    <input type="button" value="Sub" onclick="fSub()">
+
+
+</body>
+
+</html>

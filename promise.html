@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+<title>Promise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script>
+ function f1(n)
+ {
+ 
+ var promise = new Promise(function(resolve, reject) {
+ 
+ if(n%2==0)
+    resolve('Your Promise Accepted');
+	else
+	reject('Your Promise Rejected');
+})
+ 
+promise
+    .then(function(successMsg) {
+        console.log(successMsg);
+    }, function(errorMsg) {
+       //To error handler function is invoked
+        console.log(errorMsg);
+    })
+	}
+ </script>
+</head>
+<body>
+ Output<div id="output"></div><br/>
+ 
+ <input type="button" value="Promise" onclick="f1(4)"><br/>
+ 
+</body>
+</html>
